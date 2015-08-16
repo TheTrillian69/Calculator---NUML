@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <title>CalculatorNUML</title>
+
+    <!-- CalculatorNUML references -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+
+    </header>
+    <div id="mainDiv"  class="form-style-6">
+        <h2>Semester GPA Calculator</h2>
+
+        <div id="calculatorDiv">
+            <table id="tblInput" >
+                <tr>
+                    <td><label id="lblSubjectName">Subject: </label></td>
+                    <td><input id="txtSubjectName" type="text" placeholder="Enter Subject Name..."></td>
+                </tr>
+                <tr>
+                    <td><label id="lblSubjectMarks">Marks (%): </label></td>
+                    <td><input id="txtSubjectMarks" type="number" step="0.1" placeholder="Enter %age Marks..."></td>
+                </tr>
+                <tr>
+                    <td><label id="lblSubjectCreditHours">Credit Hours.: </label></td>
+                    <td><input id="txtSubjectCreditHours" type="number" step="0.5" placeholder="Enter Credit Hours..."></td>
+                </tr>
+                <tr><td colspan="2"><button id="btnAdd" class="button add">Add</button></td></tr>
+            </table>
+            <table id="tblData">
+                <tr>
+                    <td class="tdSub">Subjects&nbsp;</td>
+                    <td class="tdMarks">Marks&nbsp;</td>
+                    <td class="tdCHrs">C.Hrs&nbsp;</td>
+                    <td class="tdAction">&nbsp;Action</td>
+                </tr>
+            </table>
+            <table id="tblSum">
+                
+            </table>
+            <table id="tblOutput">
+                <th colspan="2">RESULT <span id="criteria"></span></th>
+                <tr><td>Total: </td><td id="totalPercentage"></td></tr>
+                <tr><td>CGPA: </td><td id="totalCGPA"></td></tr>
+                <tr><td>Grade: </td><td id="totalGrade"></td></tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+    
+    </footer>
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/jquery.BlockUI.js"></script>
+
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

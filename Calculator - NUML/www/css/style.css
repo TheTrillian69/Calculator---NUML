@@ -1,0 +1,247 @@
+body
+{
+    background-color: #eee;
+}
+
+.clear
+{
+    clear: both;
+}
+input[type=text]
+{
+    text-transform: uppercase;
+}
+.form-style-6{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+}
+.form-style-6 h1{
+    background: #43D1AF;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    border: 1px solid #43D1AF;
+    background-color: lightyellow;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;   
+    color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+    background: #2EBC99;
+}
+
+
+button {        
+    display: inline-block;
+    white-space: nowrap;
+    min-width: 75px;
+    width: 100%;
+    background-color: #ccc;
+    background-image: linear-gradient(top, #eee, #ccc);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+    border: 1px solid #777;
+    padding: 0;
+    margin: 2px;
+    font: bold 1em/2em Arial, Helvetica;
+    text-decoration: none;
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    border-radius: .2em;
+    box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+}
+    
+button:hover {
+    background-color: #ddd;        
+    background-image: linear-gradient(top, #fafafa, #ddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');        
+}
+
+button:active {
+    box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+    position: relative;
+    top: 1px;
+}
+
+button:focus {
+    outline: 0;
+    background: #fafafa;
+}    
+
+button:before {
+    background: #ccc;
+    background: rgba(0,0,0,.1);
+    float: left;        
+    width: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    margin: auto;
+    box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+    border-radius: .15em 0 0 .15em;
+    pointer-events: none;        
+}
+
+/* Hexadecimal entities for the icons */
+
+.add:before{
+    content: "\271A";
+}
+.btnDel:before {
+    content: "\2718";        
+}
+.save:before {
+    content: "\2714";        
+}
+
+#mainDiv
+{
+    background-color: brown;
+    min-width: 350px;
+    padding: 10px;
+    margin: auto;
+    /*
+    min-height:200px;
+    max-width: 600px;
+    box-shadow: 10px 10px 5px #888888;
+    */
+    border-radius: 20px;
+}
+#mainDiv h2
+{
+    text-align: center;
+    color: yellow;
+}
+
+
+#calculatorDiv
+{
+    background-color: bisque;
+    min-width: 330px;
+    width: 95%;
+    margin: auto;
+    padding: 5px;
+    border: 2px solid;
+}
+
+#tblInput , #tblOutput
+{
+    background-color: burlywood;
+    min-width:300px;
+    width: 95%;
+    margin: auto;
+}
+#tblData, #tblSum
+{
+    background-color: burlywood;
+    min-width:300px;
+    width: 95%;
+    margin: 5px auto 2px auto;  
+}
+
+.tdSub
+{
+    color: blue;
+    min-width:75px;
+    padding: 0px 5px 0px 10px;
+    font-weight: bold;
+}
+
+.tdMarks, .tdCHrs
+{
+    padding: 0px 10px 0px 5px;
+    font-weight: bold;
+    color:green;
+    min-width:50px;
+    text-align: right;
+}
+.tdAction
+{
+    color:darkred;
+    min-width: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+.tdBtnDelete .tdBtnReset
+{
+    min-width: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Animation Elements */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@-webkit-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@-moz-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.fade-in
+{
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    
+}
